@@ -1,5 +1,5 @@
 #include "Node.h"
-#include "LinkedLists.h"
+#include "LinkedList.h"
 #include <iostream>
 #include <string>
 
