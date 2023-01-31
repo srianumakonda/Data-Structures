@@ -1,6 +1,4 @@
 .vscode/
-*.cpp
-!spec/*.cpp
 LinkedLists/cpp/
 ArrayClass/
 Dynamic Arrays/
