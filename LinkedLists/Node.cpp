@@ -1,6 +1,7 @@
 #include "Node.h"
+#include <stdio.h>
 
-Node(value){
-            this->value = value;
-            next = NULL;
+Node::Node(int value){
+    this->value = value;
+    next = NULL;
 }
