@@ -15,5 +15,6 @@ int main(){
     }
 
     delete [] dynArray;
+    
     return 0;
 }
