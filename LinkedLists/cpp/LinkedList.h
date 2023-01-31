@@ -12,7 +12,7 @@ class LinkedList{
         void addLast(int value);
         void deleteFirst();
         void deleteLast();
-        bool contains(int value);
+        bool hasValue(int value);
         int indexOf(int value);
         void printList();
 };
