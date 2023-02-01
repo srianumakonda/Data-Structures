@@ -1,3 +1,6 @@
+import java.lang.foreign.MemoryLayout;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
         LinkedList myLinkedList = new LinkedList();
@@ -5,11 +8,14 @@ public class Main {
         myLinkedList.addLast(20);
         myLinkedList.addLast(30);
         myLinkedList.addFirst(0);
-        System.out.println(myLinkedList.indexOf(30));
-        System.out.println(myLinkedList.contains(100));
+        // System.out.println(myLinkedList.indexOf(30));
+        // System.out.println(myLinkedList.contains(100));
         myLinkedList.removeFirst();
 
-        int listToArray[] = myLinkedList.returnArray();
-        System.out.println(listToArray.toString());
+        // int listToArray[] = myLinkedList.returnArray();
+
+
+        myLinkedList.reverse();
+        myLinkedList.print();
     }
 }

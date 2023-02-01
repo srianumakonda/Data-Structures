@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class LinkedList {
     private class Node{
         private int value;
@@ -60,6 +62,21 @@ public class LinkedList {
         if (indexOf(value) == -1) return false;
         else return true;
     }
+
+    public void reverse(){
+        Node prev = head, current = head.next;
+        while(current != null){
+            Node next_ = current.next;
+            current.next = prev;
+            prev = current;
+            current = next_;
+        }
+        tail = head;
+        tail.next = null;
+        head = prev;
+    }
+
+    
     
     public int size(){
         return this.size;
@@ -70,14 +87,16 @@ public class LinkedList {
         Node current = head;
         int i=0;
         while(current != null){
+            // System.out.println(current.value);
             arr[i++] = current.value;
             current = current.next;
         }
+        // System.out.println(arr.toString());
         return arr;
     }
 
-    public void print(int value){
+    public void print(){
         int[] arr = returnArray();
-        System.out.println(arr.toString());
+        System.out.println(Arrays.toString(arr));
     }
 }
