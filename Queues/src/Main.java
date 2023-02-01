@@ -14,10 +14,16 @@ public class Main {
         // queue.enqueue(70);
         // System.out.println(queue);
 
-        QueueFromStacks queue = new QueueFromStacks();
-        queue.enqueue(10);
-        queue.enqueue(20);
-        queue.enqueue(30);
-        queue.dequeue();
+        // QueueFromStacks queue = new QueueFromStacks();
+        // queue.enqueue(10);
+        // queue.enqueue(20);
+        // queue.enqueue(30);
+        // queue.dequeue();
+
+        PriorityQueue queue = new PriorityQueue(5);
+        queue.insert(10);
+        queue.insert(30);
+        queue.insert(20);
+        System.out.println(queue);
     }
 }
