@@ -7,15 +7,18 @@ public class Main {
         myLinkedList.addLast(10);
         myLinkedList.addLast(20);
         myLinkedList.addLast(30);
+        myLinkedList.addLast(40);
+        myLinkedList.addLast(50);
+
         myLinkedList.addFirst(0);
-        // System.out.println(myLinkedList.indexOf(30));
-        // System.out.println(myLinkedList.contains(100));
         myLinkedList.removeFirst();
 
-        // int listToArray[] = myLinkedList.returnArray();
+        // System.out.println(myLinkedList.indexOf(30));
+        // System.out.println(myLinkedList.contains(100));
 
+        // myLinkedList.reverse();
+        // myLinkedList.print();
 
-        myLinkedList.reverse();
-        myLinkedList.print();
+        System.out.println(myLinkedList.getKthFromTheEnd(10));
     }
 }

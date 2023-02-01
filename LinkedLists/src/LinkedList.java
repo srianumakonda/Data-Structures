@@ -76,7 +76,20 @@ public class LinkedList {
         head = prev;
     }
 
-    
+    public int getKthFromTheEnd(int k){
+        Node counter1 = head;
+        Node counter2 = counter1;
+        for (int i=0;i<k-1;i++) {
+            counter2 = counter2.next;
+        }
+        // System.out.println(counter1.value + " " + counter2.value + "\n");
+        while(counter2 != tail){
+            counter1 = counter1.next;
+            counter2 = counter2.next;
+        }
+
+        return counter1.value;
+    }
     
     public int size(){
         return this.size;
